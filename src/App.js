@@ -9,7 +9,9 @@ import HookMouse from './components/HookMouse';
 import HookMouseContainer from './components/HookMouseContainer';
 import IntervalHookCounter from './components/IntervalHookCounter';
 import DataFeching from './components/DataFeching';
-import ComponentC from './context-components/ComponentC';
+import CounterOne from './reduce/CounterOne';
+import CounterTwo from './reduce/CounterTwo';
+// import ComponentC from './context-components/ComponentC';
 
 // function App() {
 //   return (
@@ -43,17 +45,26 @@ import ComponentC from './context-components/ComponentC';
 export const UserContext = React.createContext();
 export const ChannelContext = React.createContext();
 
-function App() {
+// function App() {
 
+//   return (
+//     <div className="App">
+//       <UserContext.Provider value={'Vishwas'}>
+//         <ChannelContext.Provider value={'Codevolution'}>
+//           <ComponentC/>
+//         </ChannelContext.Provider>
+//       </UserContext.Provider>
+//     </div>
+//   );
+// }
+
+
+function App() {
   return (
     <div className="App">
-      <UserContext.Provider value={'Vishwas'}>
-        <ChannelContext.Provider value={'Codevolution'}>
-          <ComponentC/>
-        </ChannelContext.Provider>
-      </UserContext.Provider>
+      <CounterTwo></CounterTwo>
     </div>
-  );
+  )
 }
 
 export default App;
