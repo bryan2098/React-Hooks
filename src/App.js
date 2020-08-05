@@ -16,8 +16,15 @@ import ComponentA from './context-components/ComponentA';
 import ComponentB from './context-components/ComponentB';
 import ComponentC from './context-components/ComponentC';
 
+// callback learning
+import ParentComponent from './callback/ParentComponent';
 
-// import ComponentC from './context-components/ComponentC';
+
+// memo callback
+import CountMemoCallBack from './memo-callback/CountComponent';
+
+// use ref
+import FocusInput from './useref/FocusInput';
 
 // function App() {
 //   return (
@@ -97,18 +104,44 @@ const reducer = (state, action) => {
 
 
 
-function App() {
-  const [count, dispatch] =  useReducer(reducer, initialState)
+// function App() {
+//   const [count, dispatch] =  useReducer(reducer, initialState)
 
-  return (
-    <CountContext.Provider value={{countState: count, countDispatch: dispatch}}>
+//   return (
+//     <CountContext.Provider value={{countState: count, countDispatch: dispatch}}>
+//         <div className="App">
+//           <h1>{count}</h1>
+//           <ComponentA/>
+//           <ComponentB/>
+//         </div>
+//     </CountContext.Provider>
+//       )
+//   }
+
+
+// function App() {
+//     return (
+//         <div className="App">
+//             <ParentComponent></ParentComponent>
+//         </div>
+//     )
+// }
+
+// function App() {
+//     return (
+//         <div className="App">
+//             <CountMemoCallBack></CountMemoCallBack>
+//         </div>
+//     )
+// }
+
+
+function App() {
+    return (
         <div className="App">
-          <h1>{count}</h1>
-          <ComponentA/>
-          <ComponentB/>
+            <FocusInput></FocusInput>
         </div>
-    </CountContext.Provider>
-      )
-  }
+    )
+}
 
 export default App;
