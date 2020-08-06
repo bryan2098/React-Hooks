@@ -26,6 +26,23 @@ import CountMemoCallBack from './memo-callback/CountComponent';
 // use ref
 import FocusInput from './useref/FocusInput';
 
+// use ref part 2
+import ClassTimer from './useref/ClassTimer';
+import HookTimer from './useref/HookTimer';
+
+
+// document
+import DocumentTitleOne from './documents/DocTitleOne';
+import DocumentTitleTwo from './documents/DocTitleTwo';
+
+//custom
+import CounterOneDoc from './documents/CounterOne';
+import CounterTwoDoc from './documents/CounterTwo';
+
+// custom input
+import UserForm from './documents/UserForm';
+
+
 // function App() {
 //   return (
 //     <div className="App">
@@ -136,10 +153,42 @@ const reducer = (state, action) => {
 // }
 
 
+// function App() {
+//     return (
+//         <div className="App">
+//             <FocusInput></FocusInput>
+//         </div>
+//     )
+// }
+
+// function App() {
+//     return (
+//         <div className="App">
+//             <ClassTimer></ClassTimer>
+//             <HookTimer></HookTimer>
+//         </div>
+//     )
+// }
+
+
+
+
+// function App() {
+//     return (
+//         <div className="App">
+//             <DocumentTitleOne></DocumentTitleOne>
+//             <DocumentTitleTwo />
+//         </div>
+//     )
+// }
+
+
 function App() {
     return (
         <div className="App">
-            <FocusInput></FocusInput>
+            {/* <CounterOneDoc></CounterOneDoc>
+            <CounterTwoDoc/> */}
+            <UserForm></UserForm>
         </div>
     )
 }
